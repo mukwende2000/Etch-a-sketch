@@ -1,0 +1,36 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    /* background-color: rgb(255, 255, 255); */
+    width: 35%;
+    height: 90vh;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    box-shadow: 1px 1px 5px 1px rgba(40, 22, 100, .1);
+
+}
+.square {
+    border: 1px solid black;
+    height: 100%;
+    transition: all 1s;
+}
+.sidebar {
+    position: fixed;
+    left: 30px;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+input,
+button {
+    width: 200px;
+    padding: 5px;
+    margin: 5px;
+}
